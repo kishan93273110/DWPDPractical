@@ -2,37 +2,75 @@
 <html lang="en">
 
 <head>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
     <title>Dwpd Websites</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        .practicals {
-            width: 100vw;
-            font-size: 22px;
-            text-align: center;
-        }
-        
-        .practicals a {
-            display: block;
-            background-color: #ccc;
-            width: 100vw;
-            margin-bottom: 5px;
-            padding: 5px;
-            text-decoration: none;
-            color: black;
-        }
-    </style>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script> -->
 </head>
 
+
 <body>
-    <div class="practicals">
-        <a href="practical1.html">Practical-1</a>
-        <a href="practical2.html">Practical-2</a>
+    <div id="main">
+        <nav id="navbar">
+            <img src="img/logo.png" alt="Logo">
+            <ul id="menu">
+                <li><a href="#main">Home</a></li>
+                <li><a href="#pra-contener">Practical</a></li>
+                <li><a href="#practicals">About</a></li>
+                <li><a href="#practicals">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="main-content">
+            <img src="img/logo.png" alt="MyImage">
+            <h1>Rathod Kishan Amarsing</h1>
+            <p><b>196230307118</b> :- My practical and it's code of DWPD(DYNAMIC WEB PAGE DEVELOPMENT)</p>
+        </div>
     </div>
+
+    <div id="pra-contener">
+        <h1>Practicals</h1>
+        <div class="practical">
+            <h4>Practical-1</h4>
+            <p class="discription">random web page</p>
+            <button class="btn btn2"><a href="practical1.html"> View Web-page</a></button>
+            <button class="btn btn1" onclick="viewcode('practical1')"><a href="codeView.html"> View code</a></button>
+        </div>
+        <div class="practical">
+            <h4>Practical-1</h4>
+            <p class="discription">random web page</p>
+            <button class="btn btn2"><a href="practical2.html"> View Web-page</a></button>
+            <button class="btn btn1"><a href="codeView.html"> View code</a></button>
+        </div>
+        <div class="practical">
+            <h4>Practical-1</h4>
+            <p class="discription">random web page</p>
+            <button class="btn btn2"><a href="practical1.html"> View Web-page</a></button>
+            <button class="btn btn1"><a href="codeView.html"> View code</a></button>
+        </div>
+
+    </div>
+    <div id="about">
+        <h1>Name: Rathod Kishan Amarsing</h1>
+        <h1>Enrollment No: 196230307118</h1>
+        <h1>Collage: Goverment Polytechnic Gandhinagat</h1>
+        <h1>Department: Computer Engineering</h1>
+    </div>
+
+    <div id="contact">
+        <h1>Contact me</h1>
+        <form action="javascript:sendEmail()" method="POST">
+            <input type="text" name="name" id="name" placeholder="Name" required>
+            <input type="text" name="email" id="email" placeholder="Email" required>
+            <input type="text" name="subject" id="subject" placeholder="Subject" required>
+            <input type="text" name="body" id="body" placeholder="Body" required>
+            <input type="submit" value="Send" id="submit">
+        </form>
+    </div>
+    <footer>
+        Copyright &copy; 2021-2022 Rathod kishan
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
